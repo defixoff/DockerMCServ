@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/app
     container_name: minecraft
-    command: sh -c 'cd /app; java -Xmx4096M -Xms1024M -jar server.jar nogui'
+    command: sh -c 'cd /app; java -Xmx8192M -Xms2048M -jar server.jar nogui'
     stdin_open: true
     tty: true
   playit:
